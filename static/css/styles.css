@@ -6,7 +6,81 @@
 
 /* Page Background and Structures */
 
-main {
+html {
+    margin: 0;
+    padding: 0;
     background-image: url('/resources/background.jpg');
-    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* Header Styles */
+header {
+    background-color: none;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Paste your link here box styles */
+#LinkContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#longLink {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#shortenButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#shortenButton:hover {
+    background-color: #218838;
+}
+
