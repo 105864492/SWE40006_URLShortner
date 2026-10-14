@@ -6,4 +6,3 @@ const longToShort = new Map();
 let counter = 0;
 
 const BASEUrl = 'http://short.link/';
-

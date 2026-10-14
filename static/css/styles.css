@@ -1,0 +1,12 @@
+/*
+    filename: styles.css
+    description: This file contains the CSS styles for the URL Shortener web application.
+    last-modified: 14.10.2026
+*/
+
+/* Page Background and Structures */
+
+main {
+    background-image: url('/resources/background.jpg');
+    
+}
