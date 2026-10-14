@@ -8,6 +8,7 @@
     <meta name="author" content="Victoria Rogers 105864492">
 
     <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/script.js" defer></script>
 
     <title>Short Links</title>
 </head>
@@ -15,21 +16,29 @@
 <body>
     <header>
         <h1>Short Links</h1>
+
+        <!-- Navigation Bar -->
         
-        <nav>
+        <nav id="navbar">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Early Deletion</a></li>
             </ul>
-        </nav>
-
-        
+        </nav>     
     </header>
+
+
     <main>
+        
+        
         <div id="LinkContainer">
-            <form>
+            <h2>Shorten your links here</h2>
+
+            <form id="linkForm" action="/shorten" method="POST">
+                <label for="longLink">Enter your long link:</label>
+                
                 <input id="longLink" type="text" placeholder="Paste your link here">
                 
                 <button id="shortenButton" type="submit">ShortLinkIt</button>
